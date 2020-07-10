@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+// letters
+import Letter from "../../components/Letters";
+
 // styles
 import styles from "./Contact.module.css";
 
@@ -32,7 +35,7 @@ function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formState }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert("Message has been send!"))
       .catch((error) => alert(error));
 
     e.preventDefault();
@@ -41,7 +44,17 @@ function Contact() {
     <section>
       <div className={styles.container}>
         <div className={styles.description}>
-          <span className={styles.hello}>say hello</span>
+          <span className={styles.hello}>
+            <Letter letter="s" />
+            <Letter letter="a" />
+            <Letter letter="y" />
+            <Letter letter="h" />
+            <Letter letter="e" />
+            <Letter letter="l" />
+            <Letter letter="l" />
+            <Letter letter="o" />
+            <Letter letter="," />
+          </span>
           <p className={styles.para}>
             I’m intrested in freelance opportunities, web development and web
             designing, large and small projects however, if you have any other
@@ -120,7 +133,7 @@ function Contact() {
             <div className={styles.subject}>
               <input
                 type="text"
-                name="subject"
+                name="message"
                 id="subject"
                 onChange={handleChange}
                 value={formState.subject}

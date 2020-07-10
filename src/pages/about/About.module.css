@@ -15,9 +15,14 @@
 /* inner container */
 .about {
   font-size: 12px;
+  display: flex;
+}
+.about * {
   color: #569cd6;
 }
-
+.about > span:nth-of-type(5) {
+  margin: 0 5px 0 0;
+}
 .aboutPara {
   font-size: 14px;
   margin: 20px 0 0 0;

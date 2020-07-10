@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// letters
+import Letter from "../../components/Letters";
+
 // styles
 import styles from "./About.module.css";
 
@@ -9,7 +12,16 @@ function About() {
     <section className={styles.sectionContainer}>
       <div className={styles.container}>
         <div className={styles.aboutLeft}>
-          <span className={styles.about}>about me,</span>
+          <span className={styles.about}>
+            <Letter letter="a" />
+            <Letter letter="b" />
+            <Letter letter="o" />
+            <Letter letter="u" />
+            <Letter letter="t" />
+            <Letter letter="m" />
+            <Letter letter="e" />
+            <Letter letter="," />
+          </span>
           <p className={styles.aboutPara}>
             I'm a <span className={styles.red}>front-end web developer</span>
             <span className={styles.blue}>/designer</span> from Ukraine based in
