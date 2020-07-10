@@ -1,9 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 
 // styles
 import styles from "./Contact.module.css";
 
 function Contact() {
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleChange = (e) => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formState }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
+
+    e.preventDefault();
+  };
   return (
     <section>
       <div className={styles.container}>
@@ -57,16 +90,40 @@ function Contact() {
           </span>
         </div>
         <div className={styles.emailContainer}>
-          <form name="contact" method="post" className={styles.email}>
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+            className={styles.email}
+          >
+            <input type="hidden" name="form-name" value="contact" />
             <div className={styles.NameEmail}>
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="email" name="email" id="email" placeholder="Email" />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                onChange={handleChange}
+                value={formState.name}
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                onChange={handleChange}
+                value={formState.email}
+                placeholder="Email"
+              />
             </div>
             <div className={styles.subject}>
               <input
                 type="text"
                 name="subject"
                 id="subject"
+                onChange={handleChange}
+                value={formState.subject}
                 placeholder="Subject"
               />
             </div>
@@ -75,6 +132,8 @@ function Contact() {
                 className={styles.message}
                 name="message"
                 id="message"
+                onChange={handleChange}
+                value={formState.message}
                 cols="30"
                 rows="10"
                 placeholder="Message"
