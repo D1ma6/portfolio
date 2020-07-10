@@ -133,7 +133,7 @@ function Contact() {
             <div className={styles.subject}>
               <input
                 type="text"
-                name="message"
+                name="subject"
                 id="subject"
                 onChange={handleChange}
                 value={formState.subject}
