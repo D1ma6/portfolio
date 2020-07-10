@@ -57,16 +57,16 @@ function Contact() {
           </span>
         </div>
         <div className={styles.emailContainer}>
-          <form action="POST" data-netlify="true" className={styles.email}>
+          <form name="contact" method="post" className={styles.email}>
             <div className={styles.NameEmail}>
               <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="text" name="email" id="email" placeholder="Email" />
+              <input type="email" name="email" id="email" placeholder="Email" />
             </div>
             <div className={styles.subject}>
               <input
                 type="text"
-                name="message"
-                id="message"
+                name="subject"
+                id="subject"
                 placeholder="Subject"
               />
             </div>
