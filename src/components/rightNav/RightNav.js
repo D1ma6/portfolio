@@ -9,7 +9,11 @@ function LeftNav() {
         wal <span>l.</span>
       </Link>
       <div className={styles.socialMedia}>
-        <a href="https://www.behance.net/dmytrobula" target="_blank">
+        <a
+          href="https://www.behance.net/dmytrobula"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             width="20"
             height="20"
@@ -62,7 +66,7 @@ function LeftNav() {
             </defs>
           </svg>
         </a>
-        <a href="#">
+        <a href="/" rel="noopener noreferrer">
           <svg
             width="20"
             height="20"
@@ -95,7 +99,11 @@ function LeftNav() {
             </defs>
           </svg>
         </a>
-        <a href="https://www.instagram.com/d1ma6/" target="_blank">
+        <a
+          href="https://www.instagram.com/d1ma6/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             width="20"
             height="20"
@@ -133,7 +141,11 @@ function LeftNav() {
             />
           </svg>
         </a>
-        <a href="https://vk.com/d1ma6z" target="_blank">
+        <a
+          href="https://vk.com/d1ma6z"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             width="20"
             height="20"
@@ -163,7 +175,11 @@ function LeftNav() {
             />
           </svg>
         </a>
-        <a href="https://www.facebook.com/dmytro.bula.1/" target="_blank">
+        <a
+          href="https://www.facebook.com/dmytro.bula.1/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <svg
             width="20"
             height="20"

@@ -11,6 +11,7 @@ function Work() {
           <a
             href="https://www.behance.net/gallery/95507223/Italian-restaurant-website-design"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src="./images/work/vinir.jpg" alt="" />
             <div className={styles.content}>
@@ -28,6 +29,7 @@ function Work() {
           <a
             href="https://www.behance.net/gallery/97668565/About-Japan-Website-Everything-you-need-to-know"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src="./images/work/japan.jpg" alt="" />
             <div className={styles.content}>
@@ -47,6 +49,7 @@ function Work() {
           <a
             href="https://www.behance.net/gallery/95414335/OTAKUHUB"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src="./images/work/otaku.jpg" alt="" />
             <div className={styles.content}>
@@ -63,6 +66,7 @@ function Work() {
           <a
             href="https://www.behance.net/gallery/98134429/Capacity-A-Korean-fashion-agency"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src="./images/work/capacity.jpg" alt="" />
             <div className={styles.content}>
@@ -84,6 +88,7 @@ function Work() {
           <a
             href="https://www.behance.net/gallery/95827197/GYM-A-large-room-with-equipment-for-exercising"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src="./images/work/gym.jpg" alt="" />
             <div className={styles.content}>
@@ -104,6 +109,7 @@ function Work() {
           <a
             href="https://www.behance.net/gallery/96639877/CASSIOPEIA-Everyting-about-space"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src="./images/work/cassiopeia.jpg" alt="" />
             <div className={styles.content}>
@@ -123,6 +129,7 @@ function Work() {
           <a
             href="https://www.behance.net/gallery/96455343/-OtakuHub-app-design"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <img src="./images/work/otakuApp.jpg" alt="" />
             <div className={styles.content}>

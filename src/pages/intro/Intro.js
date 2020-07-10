@@ -20,7 +20,7 @@ function Intro() {
         </span>
         <h1 className={styles.title}>
           <span className={styles.space}>
-            <Letter letter="Myyyyy" />
+            <Letter letter="M" />
             <Letter letter="y" />
           </span>
           <span className={styles.space}>

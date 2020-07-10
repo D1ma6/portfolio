@@ -37,7 +37,7 @@ function About() {
             <span className={styles.blue}>illustations</span> for web.
           </p>
           <div className={styles.buttons}>
-            <a href="#" className={styles.buttonsResume}>
+            <a href="/" className={styles.buttonsResume}>
               Resume
             </a>
             <span className={styles.buttonsContact}>

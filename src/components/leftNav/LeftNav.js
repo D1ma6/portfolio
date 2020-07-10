@@ -11,6 +11,7 @@ function LeftNav() {
       <a
         href="mailto:dmytro.bula21@gmail.com"
         target="_blank"
+        rel="noopener noreferrer"
         className={styles.email}
       >
         dmytro.bula21@gmail.com

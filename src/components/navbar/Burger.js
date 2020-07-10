@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-// styles
-import styles from "./Navbar.module.css";
-
 // nav
 import Nav from "./Nav";
 
