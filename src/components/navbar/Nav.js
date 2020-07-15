@@ -27,9 +27,12 @@ function Nav({ open }) {
       <Link className={styles.navbarLinks} to="/Contact">
         contact me
       </Link>
-      <Link to="/" className={styles.navbarLinksResume}>
+      <a
+        href="https://drive.google.com/file/d/1MA_0sY1b7D6nuMd8UtxSZ-iZzhvwDRpp/view?usp=sharing"
+        className={styles.navbarLinksResume}
+      >
         resume
-      </Link>
+      </a>
     </StyledNav>
   );
 }

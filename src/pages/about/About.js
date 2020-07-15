@@ -49,7 +49,10 @@ function About() {
             <span className={styles.blue}>illustations</span> for web.
           </p>
           <div className={styles.buttons}>
-            <a href="/" className={styles.buttonsResume}>
+            <a
+              href="https://drive.google.com/file/d/1MA_0sY1b7D6nuMd8UtxSZ-iZzhvwDRpp/view?usp=sharing"
+              className={styles.buttonsResume}
+            >
               Resume
             </a>
             <span className={styles.buttonsContact}>
